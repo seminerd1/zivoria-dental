@@ -1,0 +1,6 @@
+{
+  "name": "Zivora Speciality Dental Clinic",
+  "description": "Premium speciality dental clinic website with online patient appointment scheduling, secure digital dental records portal, AI smile assessment, and comprehensive service descriptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "./components.css";
+
+/* Base Body Font */
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Amharic Mode Font & Legibility Enhancements */
+html[lang="am"],
+[data-lang="am"],
+.amharic-font {
+  font-family: 'Noto Sans Ethiopic', 'Abyssinica SIL', 'Nyala', 'Kefa', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Prevent artificial uppercase and wide letter spacing artifacts on Ethiopic script */
+html[lang="am"] *,
+.amharic-font * {
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+/* Optimize line heights and readability for Ethiopic script */
+html[lang="am"] body,
+.amharic-font body {
+  line-height: 1.65;
+}
+
+/* Elegant Ethiopic Serif Font for Headings */
+html[lang="am"] h1, html[lang="am"] h2, html[lang="am"] h3, html[lang="am"] h4, html[lang="am"] h5, html[lang="am"] h6,
+.amharic-font h1, .amharic-font h2, .amharic-font h3, .amharic-font h4, .amharic-font h5, .amharic-font h6 {
+  font-family: 'Noto Serif Ethiopic', 'Abyssinica SIL', 'Nyala', Georgia, serif !important;
+  line-height: 1.35 !important;
+  font-weight: 700;
+}
+
+html[lang="am"] p, html[lang="am"] span, html[lang="am"] button, html[lang="am"] a, html[lang="am"] label, html[lang="am"] input, html[lang="am"] select, html[lang="am"] textarea, html[lang="am"] div,
+.amharic-font p, .amharic-font span, .amharic-font button, .amharic-font a, .amharic-font label, .amharic-font input, .amharic-font select, .amharic-font textarea, .amharic-font div {
+  font-family: 'Noto Sans Ethiopic', 'Abyssinica SIL', 'Nyala', sans-serif !important;
+}
