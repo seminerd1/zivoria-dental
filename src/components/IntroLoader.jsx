@@ -98,7 +98,7 @@ export const IntroLoader = ({ onComplete }) => {
                 Zivora <span className="font-light text-[#00f2b2]">Speciality</span>
               </h1>
               <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-blue-200">
-                Clinical Dental Excellence & Radiography
+                Dental Clinic
               </p>
             </motion.div>
 
