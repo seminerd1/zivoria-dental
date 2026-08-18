@@ -11,7 +11,7 @@ export const WhyChooseUsSection = () => {
       titleKey: 'why1Title',
       descKey: 'why1Desc',
       theme: {
-        cardBg: 'bg-gradient-to-b from-teal-50/60 via-white to-white',
+        cardBg: 'bg-white',
         border: 'border-teal-200/80 hover:border-teal-400',
         iconBg: 'bg-teal-600 text-white shadow-teal-200',
         badgeColor: 'text-teal-700 bg-teal-100/80',
@@ -22,7 +22,7 @@ export const WhyChooseUsSection = () => {
       titleKey: 'why2Title',
       descKey: 'why2Desc',
       theme: {
-        cardBg: 'bg-gradient-to-b from-blue-50/60 via-white to-white',
+        cardBg: 'bg-white',
         border: 'border-blue-200/80 hover:border-blue-400',
         iconBg: 'bg-[#0b1b54] text-[#00f2b2] shadow-blue-200',
         badgeColor: 'text-blue-700 bg-blue-100/80',
@@ -33,7 +33,7 @@ export const WhyChooseUsSection = () => {
       titleKey: 'why3Title',
       descKey: 'why3Desc',
       theme: {
-        cardBg: 'bg-gradient-to-b from-cyan-50/60 via-white to-white',
+        cardBg: 'bg-white',
         border: 'border-cyan-200/80 hover:border-cyan-400',
         iconBg: 'bg-cyan-600 text-white shadow-cyan-200',
         badgeColor: 'text-cyan-800 bg-cyan-100/80',
@@ -44,7 +44,7 @@ export const WhyChooseUsSection = () => {
       titleKey: 'why4Title',
       descKey: 'why4Desc',
       theme: {
-        cardBg: 'bg-gradient-to-b from-rose-50/60 via-white to-white',
+        cardBg: 'bg-white',
         border: 'border-rose-200/80 hover:border-rose-400',
         iconBg: 'bg-rose-600 text-white shadow-rose-200',
         badgeColor: 'text-rose-700 bg-rose-100/80',
@@ -55,7 +55,7 @@ export const WhyChooseUsSection = () => {
       titleKey: 'why5Title',
       descKey: 'why5Desc',
       theme: {
-        cardBg: 'bg-gradient-to-b from-indigo-50/60 via-white to-white',
+        cardBg: 'bg-white',
         border: 'border-indigo-200/80 hover:border-indigo-400',
         iconBg: 'bg-indigo-600 text-white shadow-indigo-200',
         badgeColor: 'text-indigo-700 bg-indigo-100/80',
@@ -66,7 +66,7 @@ export const WhyChooseUsSection = () => {
       titleKey: 'why6Title',
       descKey: 'why6Desc',
       theme: {
-        cardBg: 'bg-gradient-to-b from-emerald-50/60 via-white to-white',
+        cardBg: 'bg-white',
         border: 'border-emerald-200/80 hover:border-emerald-400',
         iconBg: 'bg-emerald-600 text-white shadow-emerald-200',
         badgeColor: 'text-emerald-700 bg-emerald-100/80',
@@ -75,16 +75,12 @@ export const WhyChooseUsSection = () => {
   ];
 
   return (
-    <section id="why-us" className="py-20 bg-gradient-to-br from-sky-100/70 via-blue-50/50 to-indigo-50/70 border-b border-blue-200/60 relative overflow-hidden">
-      {/* Colorful glow shapes */}
-      <div className="absolute top-10 left-10 w-80 h-80 bg-teal-200/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-indigo-200/30 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="why-us" className="py-20 bg-emerald-50/60 border-b border-emerald-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12 relative z-10">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-block text-xs font-extrabold uppercase tracking-[0.25em] text-[#0b1b54] bg-blue-100/90 px-4 py-1.5 rounded-full border border-blue-300/80 shadow-sm">
+          <span className="inline-block text-xs font-extrabold uppercase tracking-[0.25em] text-[#0b1b54] bg-emerald-100/90 px-4 py-1.5 rounded-full border border-emerald-300/80 shadow-sm">
             {t('whyTag')}
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#0a184e] tracking-tight">
@@ -124,5 +120,3 @@ export const WhyChooseUsSection = () => {
     </section>
   );
 };
-
-

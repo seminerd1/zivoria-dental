@@ -16,11 +16,7 @@ export const PatientExperienceAndProcessSection = () => {
   const eduItems = ['edu1', 'edu2', 'edu3', 'edu4', 'edu5', 'edu6'];
 
   return (
-    <section id="process" className="py-20 bg-gradient-to-b from-slate-100 via-sky-50/60 to-blue-50/40 border-b border-blue-200/60 relative overflow-hidden">
-      {/* Background ambient glow accents */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-cyan-200/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-indigo-200/30 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="process" className="py-20 bg-emerald-50/60 border-b border-emerald-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-20 relative z-10">
         
         {/* OUR PATIENT EXPERIENCE */}
@@ -40,6 +36,7 @@ export const PatientExperienceAndProcessSection = () => {
             </p>
           </div>
 
+          {/* BLUE BOX 1 - UNTOUCHED */}
           <div className="lg:col-span-4 bg-gradient-to-br from-[#0b1b54] via-[#0e246e] to-[#08133d] text-white p-8 rounded-2xl border border-blue-800 space-y-4 text-center shadow-xl">
             <div className="w-14 h-14 rounded-2xl bg-blue-900/90 border border-blue-400/40 text-[#00f2b2] flex items-center justify-center mx-auto shadow-lg">
               <Heart className="w-7 h-7 fill-[#00f2b2]/20 text-[#00f2b2]" />
@@ -91,7 +88,7 @@ export const PatientExperienceAndProcessSection = () => {
         {/* OUR COMMITMENT & PATIENT EDUCATION */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-blue-200/60">
           
-          {/* OUR COMMITMENT */}
+          {/* BLUE BOX 2 - UNTOUCHED */}
           <div className="bg-gradient-to-br from-[#0b1b54] via-[#0e246e] to-[#08133d] text-white p-8 sm:p-10 rounded-2xl border border-blue-800 shadow-xl space-y-4 flex flex-col justify-between">
             <div className="space-y-4">
               <span className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#00f2b2]">

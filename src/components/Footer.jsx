@@ -14,6 +14,9 @@ export const Footer = ({
     }
   };
 
+  // Fallback to 'ZIVORA' if brandName key is not yet defined
+  const brandTitle = t('brandName') || 'ZIVORA';
+
   return (
     <footer className="bg-[#0a184e] text-blue-200 text-xs py-16 border-t border-blue-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
@@ -24,7 +27,9 @@ export const Footer = ({
           <div className="space-y-4 md:col-span-1">
             <div className="flex flex-col w-fit">
               <div className="w-full flex justify-between text-2xl font-black text-white leading-none tracking-widest">
-                <span>Z</span><span>I</span><span>V</span><span>O</span><span>R</span><span>A</span>
+                {Array.from(brandTitle).map((char, index) => (
+                  <span key={index}>{char}</span>
+                ))}
               </div>
               <span className="text-[10px] font-extrabold uppercase tracking-[0.1em] text-[#00f2b2] block mt-1 whitespace-nowrap">
                 {t('brandSub')}
@@ -37,17 +42,6 @@ export const Footer = ({
               <HeartPulse className="w-4 h-4 text-[#00f2b2]" />
               {t('footerCare')}
             </div>
-          </div>
-
-          {/* Navigation Links */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-extrabold uppercase tracking-[0.2em] text-cyan-300">{t('quickNav')}</h4>
-            <ul className="space-y-2 text-xs font-medium">
-              <li><button onClick={() => scrollToSection('about')} className="text-blue-100 hover:text-white transition-colors cursor-pointer">{t('navAbout')}</button></li>
-              <li><button onClick={() => scrollToSection('why-us')} className="text-blue-100 hover:text-white transition-colors cursor-pointer">{t('navWhyUs')}</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="text-blue-100 hover:text-white transition-colors cursor-pointer">{t('navServices')}</button></li>
-              <li><button onClick={() => scrollToSection('process')} className="text-blue-100 hover:text-white transition-colors cursor-pointer">{t('navProcess')}</button></li>
-            </ul>
           </div>
 
           {/* Patient Tools */}
@@ -63,7 +57,7 @@ export const Footer = ({
           <div className="space-y-3">
             <h4 className="text-xs font-extrabold uppercase tracking-[0.2em] text-cyan-300">{t('contactTitle')}</h4>
             <p className="text-blue-100 font-medium">{t('addisAbaba')}</p>
-            <p className="text-lg font-bold text-white">{t('phoneLabel')} +251 953 4378 78</p>
+            <p className="text-blue-100 font-medium">{t('phoneLabel')} +251 953 4378 78</p>
             <p className="text-blue-100 font-medium">{t('emailLabel')} care@zivoradental.com</p>
           </div>
 
@@ -80,4 +74,3 @@ export const Footer = ({
     </footer>
   );
 };
-

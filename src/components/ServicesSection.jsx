@@ -32,7 +32,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's1Desc',
       itemsKeyLabel: 'Services include:',
       items: ['s1Item1', 's1Item2', 's1Item3', 's1Item4', 's1Item5', 's1Item6'],
-      cardBg: 'bg-gradient-to-b from-blue-50/70 via-white to-white border-blue-200/80 hover:border-blue-400',
+      cardBg: 'bg-white border-blue-200/80 hover:border-blue-400',
       iconBg: 'bg-blue-600 text-white',
       accentColor: 'text-blue-600',
       checkBg: 'bg-blue-100 text-blue-600',
@@ -43,7 +43,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's2Desc',
       itemsKeyLabel: 'Benefits include:',
       items: ['s2Item1', 's2Item2', 's2Item3', 's2Item4', 's2Item5'],
-      cardBg: 'bg-gradient-to-b from-cyan-50/70 via-white to-white border-cyan-200/80 hover:border-cyan-400',
+      cardBg: 'bg-white border-cyan-200/80 hover:border-cyan-400',
       iconBg: 'bg-cyan-600 text-white',
       accentColor: 'text-cyan-600',
       checkBg: 'bg-cyan-100 text-cyan-600',
@@ -54,7 +54,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's3Desc',
       itemsKeyLabel: 'Available treatments include:',
       items: ['s3Item1', 's3Item2', 's3Item3', 's3Item4', 's3Item5', 's3Item6'],
-      cardBg: 'bg-gradient-to-b from-violet-50/70 via-white to-white border-violet-200/80 hover:border-violet-400',
+      cardBg: 'bg-white border-violet-200/80 hover:border-violet-400',
       iconBg: 'bg-violet-600 text-white',
       accentColor: 'text-violet-600',
       checkBg: 'bg-violet-100 text-violet-600',
@@ -65,7 +65,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's4Desc',
       itemsKeyLabel: 'Benefits include:',
       items: ['s4Item1', 's4Item2', 's4Item3', 's4Item4', 's4Item5'],
-      cardBg: 'bg-gradient-to-b from-emerald-50/70 via-white to-white border-emerald-200/80 hover:border-emerald-400',
+      cardBg: 'bg-white border-emerald-200/80 hover:border-emerald-400',
       iconBg: 'bg-emerald-600 text-white',
       accentColor: 'text-emerald-600',
       checkBg: 'bg-emerald-100 text-emerald-600',
@@ -76,7 +76,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's5Desc',
       itemsKeyLabel: 'Advantages include:',
       items: ['s5Item1', 's5Item2', 's5Item3', 's5Item4', 's5Item5'],
-      cardBg: 'bg-gradient-to-b from-teal-50/70 via-white to-white border-teal-200/80 hover:border-teal-400',
+      cardBg: 'bg-white border-teal-200/80 hover:border-teal-400',
       iconBg: 'bg-[#0b1b54] text-[#00f2b2]',
       accentColor: 'text-teal-700',
       checkBg: 'bg-teal-100 text-teal-700',
@@ -87,7 +87,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's6Desc',
       itemsKeyLabel: null,
       items: [],
-      cardBg: 'bg-gradient-to-b from-amber-50/70 via-white to-white border-amber-200/80 hover:border-amber-400',
+      cardBg: 'bg-white border-amber-200/80 hover:border-amber-400',
       iconBg: 'bg-amber-600 text-white',
       accentColor: 'text-amber-700',
       checkBg: 'bg-amber-100 text-amber-700',
@@ -98,7 +98,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's7Desc',
       itemsKeyLabel: null,
       items: [],
-      cardBg: 'bg-gradient-to-b from-rose-50/70 via-white to-white border-rose-200/80 hover:border-rose-400',
+      cardBg: 'bg-white border-rose-200/80 hover:border-rose-400',
       iconBg: 'bg-rose-500 text-white',
       accentColor: 'text-rose-600',
       checkBg: 'bg-rose-100 text-rose-600',
@@ -109,7 +109,7 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
       descKey: 's8Desc',
       itemsKeyLabel: 'Services include:',
       items: ['s8Item1', 's8Item2', 's8Item3', 's8Item4'],
-      cardBg: 'bg-gradient-to-b from-indigo-50/70 via-white to-white border-indigo-200/80 hover:border-indigo-400',
+      cardBg: 'bg-white border-indigo-200/80 hover:border-indigo-400',
       iconBg: 'bg-indigo-600 text-white',
       accentColor: 'text-indigo-600',
       checkBg: 'bg-indigo-100 text-indigo-600',
@@ -148,16 +148,12 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-sky-50/80 via-blue-50/50 to-slate-100 border-b border-blue-200/60 relative overflow-hidden">
-      {/* Background soft ambient colored blurs */}
-      <div className="absolute top-0 right-10 w-96 h-96 bg-cyan-200/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 bg-indigo-200/30 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="services" className="py-20 bg-emerald-50/60 border-b border-emerald-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-block text-xs font-extrabold uppercase tracking-[0.25em] text-[#0b1b54] bg-blue-100/90 px-4 py-1.5 rounded-full border border-blue-300/80 shadow-sm">
+          <span className="inline-block text-xs font-extrabold uppercase tracking-[0.25em] text-[#0b1b54] bg-emerald-100/90 px-4 py-1.5 rounded-full border border-emerald-300/80 shadow-sm">
             {t('servTag')}
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#0a184e] tracking-tight">
@@ -282,4 +278,3 @@ export const ServicesSection = ({ onSelectServiceForBooking }) => {
     </section>
   );
 };
-
